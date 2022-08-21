@@ -1,7 +1,7 @@
 ![2022-08-20 23_04_47-JsonToTable](https://user-images.githubusercontent.com/71946846/185766007-33c7f119-85bd-4562-8097-9623ea0083d3.png)
 # JsonToTable - description
 This is a project using Angular 12 so I uninstalled the current version of the CLI and, using nvm, I reverted to a Node version tailored to Angular12. 
-Task: I placed the json data in the assets folder in a data.json file; then I created a service to handle the simulation of fetching data from the API. In the component I used the response and put the records in a table in the template (prtSc is in readme.md).
+Task: I placed the json data in the assets folder in a data.json file; then I created a  models and service to handle the simulation of fetching data from the API. In the component I used the response and put the records in a table in the template (prtSc is in readme.md).
 Note: The data structure in json is quite complex and consists of nested, non-uniform objects.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
