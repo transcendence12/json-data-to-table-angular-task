@@ -6,10 +6,11 @@
     name="term"
     id="term"
     placeholder="Enter search term"
+    [(ngModel)]="searchString"
     autofocus
   />
-  
-  <button class="btn-search">Clear search field</button>
+
+  <button class="btn-search" (click)="handleClear()">Clear search field</button>
 </div>
 <table>
   <thead>
@@ -23,7 +24,9 @@
     </tr>
   </thead>
   <tbody>
-    <ng-container *ngFor="let data of dataExpected">
+    <ng-container
+      *ngFor="let data of dataExpected | filterByDescription: searchString"
+    >
       <tr>
         <td>{{ data.work_order_id }}</td>
         <td>{{ data.description }}</td>

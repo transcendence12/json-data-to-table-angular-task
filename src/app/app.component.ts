@@ -26,4 +26,8 @@ export class AppComponent implements OnInit{
     })
     .catch((error) => error)
   }
+
+  handleClear() {
+    this.searchString = '';
+  }
 }

@@ -12,7 +12,7 @@ export class FilterByDescriptionPipe implements PipeTransform {
     }
 
     return value.filter((value: any) => {
-      return (value.description.toLocalLowercase().includes(args))
+      return (value.description.toLocaleLowerCase().includes(args));
     })
   }
 }
