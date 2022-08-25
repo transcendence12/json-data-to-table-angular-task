@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { OrdersService } from './orders.service';
+import { FilterByDescriptionPipe } from './filter-by-description.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterByDescriptionPipe
   ],
   imports: [
     BrowserModule,
