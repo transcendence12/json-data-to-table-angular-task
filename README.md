@@ -1,3 +1,4 @@
+![2022-08-25 11_12_29-JsonToTable](https://user-images.githubusercontent.com/71946846/186625441-fb1ab659-21bc-4312-8f8c-58b0de818ee2.png)
 ![2022-08-20 23_04_47-JsonToTable](https://user-images.githubusercontent.com/71946846/185766007-33c7f119-85bd-4562-8097-9623ea0083d3.png)
 # JsonToTable - description
 This is a project using Angular 12 so I uninstalled the current version of the CLI and, using nvm, I reverted to a Node version tailored to Angular12. 
