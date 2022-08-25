@@ -1,4 +1,16 @@
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
+<div class="search-wrapper">
+  <label for="term">Search by description:</label>
+  <input
+    type="text"
+    name="term"
+    id="term"
+    placeholder="Enter search term"
+    autofocus
+  />
+  
+  <button class="btn-search">Clear search field</button>
+</div>
 <table>
   <thead>
     <tr>
@@ -11,17 +23,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of dataExpected">
-      <td>{{ data.work_order_id }}</td>
-      <td>{{ data.description }}</td>
-      <td>{{ data.received_date | date }}</td>
-      <td>
-        <span>{{data?.assigned_to[0]?.person_name}}</span>
-        <span>{{data?.assigned_to[1]?.person_name}}</span>
-      </td>
-      <td>{{ data.status }}</td>
-      <td>{{ data.priority }}</td>
-    </tr>
+    <ng-container *ngFor="let data of dataExpected">
+      <tr>
+        <td>{{ data.work_order_id }}</td>
+        <td>{{ data.description }}</td>
+        <td>{{ data.received_date | date }}</td>
+        <td>
+          <span>{{ data?.assigned_to[0]?.person_name }}</span>
+          <span>{{ data?.assigned_to[1]?.person_name }}</span>
+        </td>
+        <td>{{ data.status }}</td>
+        <td>{{ data.priority }}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>
-

@@ -10,6 +10,7 @@ import { DataOrder } from './models/data-model';
 export class AppComponent implements OnInit{
   title = 'json-to-table';
   dataExpected!:DataOrder[];
+  searchString: string = '';
 
   constructor(private ordersService: OrdersService) {}
 
